@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Biviana\\Desktop\\Remote Git\\Clinica\\ClinicaBase\\ClinicaBase.csproj": {}
+    "C:\\Users\\Biviana\\Desktop\\Clinica\\ClinicaBase\\ClinicaBase.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Biviana\\Desktop\\Remote Git\\Clinica\\ClinicaBase\\ClinicaBase.csproj": {
+    "C:\\Users\\Biviana\\Desktop\\Clinica\\ClinicaBase\\ClinicaBase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Biviana\\Desktop\\Remote Git\\Clinica\\ClinicaBase\\ClinicaBase.csproj",
+        "projectUniqueName": "C:\\Users\\Biviana\\Desktop\\Clinica\\ClinicaBase\\ClinicaBase.csproj",
         "projectName": "ClinicaBase",
-        "projectPath": "C:\\Users\\Biviana\\Desktop\\Remote Git\\Clinica\\ClinicaBase\\ClinicaBase.csproj",
+        "projectPath": "C:\\Users\\Biviana\\Desktop\\Clinica\\ClinicaBase\\ClinicaBase.csproj",
         "packagesPath": "C:\\Users\\Biviana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Biviana\\Desktop\\Remote Git\\Clinica\\ClinicaBase\\obj\\",
+        "outputPath": "C:\\Users\\Biviana\\Desktop\\Clinica\\ClinicaBase\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Biviana\\AppData\\Roaming\\NuGet\\NuGet.Config",
