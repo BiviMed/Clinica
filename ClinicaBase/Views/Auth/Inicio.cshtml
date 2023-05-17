@@ -1,0 +1,25 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="inicio-container">
+    <div class="card" style="width: 18rem;">
+        <img src="~/img/orden.png" class="card-img-top" alt="orden médica">
+        <div class="card-body">
+            <h5 class="card-title">Pacientes</h5>
+            <p class="card-text">Descarga las órdenes propuestas en la última consulta.</p>
+            <a href="#" class="btn btn-primary">Descargar</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="~/img/equipo-medico.png" class="card-img-top" alt="personal">
+        <div class="card-body">
+            <h5 class="card-title">Personal Autorizado</h5>
+            <p class="card-text">Solo puede ingresar el personal autorizado.</p>
+            <a asp-controller="Auth" asp-action="Login" class="btn btn-primary align-content-center">Ingresar</a>
+        </div>
+    </div>
+</div>

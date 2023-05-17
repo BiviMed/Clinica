@@ -1,0 +1,134 @@
+﻿@model ClinicaBase.Models.ViewModels.PacienteViewModel
+
+@{
+    ViewData["Title"] = "Nuevo Paciente";
+}
+
+<div class="container">
+
+    <div class="text-center mt-2 mb-3">
+        <h1>Crear Historia Clínica del Paciente</h1>
+    </div>
+    
+    @if (Model is not null)
+    {
+        @if (Model.Succeeded == 0 && Model.Mensaje != null)
+        {
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                @Model.Mensaje
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+    }
+    
+
+    <form asp-action="Agregar" method="post">
+        <div asp-validation-summary="ModelOnly"></div>
+
+        <div class="mt-2 mb-3">
+            <label class="form-label">Documento</label>
+            <input type="text" class="form-control" asp-for="Documento" />
+            <span asp-validation-for="Documento" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Nombres</label>
+            <input type="text" class="form-control" asp-for="Nombres" />
+            <span asp-validation-for="Nombres" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Apellidos</label>
+            <input type="text" class="form-control" asp-for="Apellidos" />
+            <span asp-validation-for="Apellidos" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Correo</label>
+            <input type="email" class="form-control" asp-for="Correo" />
+            <span asp-validation-for="Correo" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Dirección</label>
+            <input type="text" class="form-control" asp-for="Direccion" />
+            <span asp-validation-for="Direccion" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Teléfono</label>
+            <input type="tel" class="form-control" asp-for="Telefono" />
+            <span asp-validation-for="Telefono" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Fecha de Nacimiento</label>
+            <input type="date" class="form-control" asp-for="FechaNacimiento" />
+            <span asp-validation-for="FechaNacimiento" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Profesión</label>
+            <input type="text" class="form-control" asp-for="Profesion" />
+            <span asp-validation-for="Profesion" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Ocupación</label>
+            <input type="text" class="form-control" asp-for="Ocupacion" />
+            <span asp-validation-for="Ocupacion" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Nombre de Familiar</label>
+            <input type="text" class="form-control" asp-for="NombreFamiliar" />
+            <span asp-validation-for="NombreFamiliar" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Teléfono de Familiar</label>
+            <input type="text" class="form-control" asp-for="TelefonoFamiliar" />
+            <span asp-validation-for="TelefonoFamiliar" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Tipo de EPS</label>
+            <input type="text" class="form-control" asp-for="TipoEps" />
+            <span asp-validation-for="TipoEps" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Nombre EPS</label>
+            <input type="text" class="form-control" asp-for="NombreEps" />
+            <span asp-validation-for="NombreEps" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Examen Físico</label>
+            <input type="text" class="form-control" asp-for="ExamenFisico" />
+            <span asp-validation-for="ExamenFisico" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Antecedentes</label>
+            <input type="text" class="form-control" asp-for="Antecedentes" />
+            <span asp-validation-for="Antecedentes" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Antecedentes Farmacológicos</label>
+            <input type="text" class="form-control" asp-for="AntecedentesFarmac" />
+            <span asp-validation-for="AntecedentesFarmac" class="text-danger"></span>
+        </div>
+
+        <div class="mt-2">
+            <button type="submit" class="btn btn-primary">Crear Historia Clínica</button>
+        </div>
+    </form>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
+
+

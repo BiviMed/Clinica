@@ -1,0 +1,59 @@
+﻿@model ClinicaBase.Models.ViewModels.UsuarioAuthViewModel
+@{
+}
+
+<div class="main-container">
+    <div class="img-inicial">
+        <div class="img-auth-container">
+            <img src="~/img/consulting.png" alt="Clinica" />
+        </div>
+    </div>
+
+    <div class="login-container">       
+
+        <div class="login-card">
+            <div class="m-5 text-center">
+                <h1>LogIn</h1>
+            </div>
+
+            <form asp-controller="Auth" asp-action="Login">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="mb-3">
+                    <label class="form-label">Usuario:</label>   
+                    <label class="text-danger fw-bold">*</label>
+                    <input asp-for="Documento" type="text" class="form-control" />
+                    <span asp-validation-for="Documento" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Contraseña</label>
+                    <label class="text-danger fw-bold">*</label>
+                    <input asp-for="Contrasena" type="password" class="form-control" />
+                    <span asp-validation-for="Contrasena" class="text-danger"></span>                
+                </div>
+
+                @{
+                    if (Model != null)
+                    {
+                        if (Model.Message != null)
+                        {
+                            if (Model.Succeed == 0)
+                            {
+                                <div class="m-2">
+                                    <span class="text-danger">@Model.Message</span>
+                                </div>
+                            }
+                        }
+                    }
+                }
+
+                <div class="mb-3">
+                    <a asp-controller="Auth" asp-action="Register" class="btn btn-success">Registrarme</a>
+                    <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>

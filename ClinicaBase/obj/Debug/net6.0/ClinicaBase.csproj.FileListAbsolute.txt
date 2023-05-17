@@ -1,0 +1,266 @@
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\appsettings.Development.json
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\appsettings.json
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\ClinicaBase.staticwebassets.runtime.json
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\ClinicaBase.exe
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\ClinicaBase.deps.json
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\ClinicaBase.runtimeconfig.json
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\ClinicaBase.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\ClinicaBase.pdb
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\obj\Debug\net6.0\ClinicaBase.csproj.AssemblyReference.cache
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\obj\Debug\net6.0\ClinicaBase.GeneratedMSBuildEditorConfig.editorconfig
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\obj\Debug\net6.0\ClinicaBase.AssemblyInfoInputs.cache
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\obj\Debug\net6.0\ClinicaBase.AssemblyInfo.cs
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\obj\Debug\net6.0\ClinicaBase.csproj.CoreCompileInputs.cache
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\obj\Debug\net6.0\ClinicaBase.MvcApplicationPartsAssemblyInfo.cache
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\obj\Debug\net6.0\ClinicaBase.RazorAssemblyInfo.cache
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\obj\Debug\net6.0\ClinicaBase.RazorAssemblyInfo.cs
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\obj\Debug\net6.0\staticwebassets\msbuild.ClinicaBase.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\obj\Debug\net6.0\staticwebassets\msbuild.build.ClinicaBase.props
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ClinicaBase.props
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ClinicaBase.props
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\obj\Debug\net6.0\staticwebassets.pack.json
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\obj\Debug\net6.0\staticwebassets.build.json
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\obj\Debug\net6.0\staticwebassets.development.json
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\obj\Debug\net6.0\scopedcss\bundle\ClinicaBase.styles.css
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\obj\Debug\net6.0\scopedcss\projectbundle\ClinicaBase.bundle.scp.css
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\obj\Debug\net6.0\ClinicaBase.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\obj\Debug\net6.0\refint\ClinicaBase.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\obj\Debug\net6.0\ClinicaBase.pdb
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\obj\Debug\net6.0\ClinicaBase.genruntimeconfig.cache
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\obj\Debug\net6.0\ref\ClinicaBase.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Azure.Core.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Azure.Identity.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Humanizer.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Mono.TextTemplating.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\System.CodeDom.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\System.Drawing.Common.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\System.Memory.Data.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\System.Runtime.Caching.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\System.Security.Permissions.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\System.Text.Json.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\System.Windows.Extensions.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\obj\Debug\net6.0\ClinicaBase.csproj.CopyComplete
+E:\Proyectos Reales\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\appsettings.json
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\ClinicaBase.staticwebassets.runtime.json
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\ClinicaBase.exe
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\ClinicaBase.deps.json
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\ClinicaBase.runtimeconfig.json
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\ClinicaBase.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\ClinicaBase.pdb
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Humanizer.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\obj\Debug\net6.0\ClinicaBase.csproj.AssemblyReference.cache
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\obj\Debug\net6.0\ClinicaBase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\obj\Debug\net6.0\ClinicaBase.AssemblyInfoInputs.cache
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\obj\Debug\net6.0\ClinicaBase.AssemblyInfo.cs
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\obj\Debug\net6.0\ClinicaBase.csproj.CoreCompileInputs.cache
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\obj\Debug\net6.0\ClinicaBase.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\obj\Debug\net6.0\ClinicaBase.RazorAssemblyInfo.cache
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\obj\Debug\net6.0\ClinicaBase.RazorAssemblyInfo.cs
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\obj\Debug\net6.0\staticwebassets\msbuild.ClinicaBase.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\obj\Debug\net6.0\staticwebassets\msbuild.build.ClinicaBase.props
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ClinicaBase.props
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ClinicaBase.props
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\obj\Debug\net6.0\scopedcss\bundle\ClinicaBase.styles.css
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\obj\Debug\net6.0\scopedcss\projectbundle\ClinicaBase.bundle.scp.css
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\obj\Debug\net6.0\ClinicaBase.csproj.CopyComplete
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\obj\Debug\net6.0\ClinicaBase.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\obj\Debug\net6.0\refint\ClinicaBase.dll
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\obj\Debug\net6.0\ClinicaBase.pdb
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\obj\Debug\net6.0\ClinicaBase.genruntimeconfig.cache
+C:\Users\BiviM\Desktop\ClinicaBase\ClinicaBase\obj\Debug\net6.0\ref\ClinicaBase.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\appsettings.json
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\ClinicaBase.staticwebassets.runtime.json
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\ClinicaBase.exe
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\ClinicaBase.deps.json
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\ClinicaBase.runtimeconfig.json
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\ClinicaBase.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\ClinicaBase.pdb
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\obj\Debug\net6.0\ClinicaBase.csproj.AssemblyReference.cache
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\obj\Debug\net6.0\ClinicaBase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\obj\Debug\net6.0\ClinicaBase.AssemblyInfoInputs.cache
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\obj\Debug\net6.0\ClinicaBase.AssemblyInfo.cs
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\obj\Debug\net6.0\ClinicaBase.csproj.CoreCompileInputs.cache
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\obj\Debug\net6.0\ClinicaBase.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\obj\Debug\net6.0\ClinicaBase.RazorAssemblyInfo.cache
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\obj\Debug\net6.0\ClinicaBase.RazorAssemblyInfo.cs
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\obj\Debug\net6.0\staticwebassets\msbuild.ClinicaBase.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\obj\Debug\net6.0\staticwebassets\msbuild.build.ClinicaBase.props
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ClinicaBase.props
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ClinicaBase.props
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\obj\Debug\net6.0\scopedcss\bundle\ClinicaBase.styles.css
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\obj\Debug\net6.0\scopedcss\projectbundle\ClinicaBase.bundle.scp.css
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\obj\Debug\net6.0\ClinicaBase.csproj.CopyComplete
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\obj\Debug\net6.0\ClinicaBase.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\obj\Debug\net6.0\refint\ClinicaBase.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\obj\Debug\net6.0\ClinicaBase.pdb
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\obj\Debug\net6.0\ClinicaBase.genruntimeconfig.cache
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\obj\Debug\net6.0\ref\ClinicaBase.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
