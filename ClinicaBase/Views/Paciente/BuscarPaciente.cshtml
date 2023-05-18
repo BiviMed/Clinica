@@ -1,0 +1,57 @@
+﻿@model ClinicaBase.Models.ViewModels.BuscarPacienteViewModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="container">
+    <div class="text-center mb-5">
+        <h1>Buscar Paciente</h1>
+    </div>
+
+    <form asp-action="BuscarPaciente">
+        <div class="mb-2">
+            <label class="form-label">Documento</label>
+            <input class="form-control" asp-for="Documento" />
+        </div>
+        <div class="mb-2">
+            <label class="form-label">Nombres</label>
+            <input class="form-control" asp-for="Nombres" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Apellidos</label>
+            <input class="form-control" asp-for="Apellidos" />
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Buscar</button>
+        </div>
+    </form>
+
+    @if (Model != null)
+    {
+        if (Model.Succeeded == 0 && Model.Message != null)
+        {
+            <div class="mb-3">
+                <div class="alert alert-danger" role="alert">
+                    @Model.Message
+                </div>
+            </div>
+        }
+    }
+
+    <form asp-action="ActualizarInfo">
+        @if (Model != null)
+        {
+            @if (Model.Pacientes != null)
+            {
+                foreach (var paciente in Model.Pacientes)
+                {
+                    <div>
+                        @paciente.Documento
+                    </div>
+                }
+            }
+        }
+    </form>
+</div>

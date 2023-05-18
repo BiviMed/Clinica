@@ -4,7 +4,7 @@ namespace ClinicaBase.Models.ViewModels
 {
     public class EditarPacieteViewModel
     {
-        private const string RequiredError = "Campo obligatorio";
+        private const string RequiredError = "Campo obligatorio";        
 
         [StringLength(255)]
         public string? Correo { get; set; } = null!;
@@ -49,5 +49,10 @@ namespace ClinicaBase.Models.ViewModels
 
         [Required(ErrorMessage = RequiredError)]
         public string? AntecedentesFarmac { get; set; }
+
+        public int? Succeeded { get; set; } = null;
+
+        public string? Message { get; set; } = null;
+                
     }
 }

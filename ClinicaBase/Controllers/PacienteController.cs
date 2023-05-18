@@ -1,4 +1,5 @@
 ﻿using ClinicaBase.Data;
+using ClinicaBase.Models.Entities;
 using ClinicaBase.Models.ViewModels;
 using ClinicaBase.Responses;
 using ClinicaBase.Services.ServicioPacientes;
@@ -60,6 +61,37 @@ namespace ClinicaBase.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        [Authorize(Roles = "Admin, Enfermeria")]
+        [HttpGet]
+        public IActionResult BuscarPaciente()
+        {            
+            return View();
+        }
+
+        [Authorize(Roles = "Admin, Enfermeria")]
+        [HttpPost]
+        public async Task<IActionResult> BuscarPaciente(BuscarPacienteViewModel request)
+        {
+            if (request.Documento == null && request.Nombres == null && request.Apellidos == null)
+            {
+                request.Succeeded = 0;
+                request.Message = "Debe llenar por lo menos un campo para buscar al paciente.";
+                return View(request);
+            }
+
+            GeneralResponse response = await _servicioPaciente.BuscarPaciente(request);
+            if (response.Succeed == 0)
+            {
+                request.Succeeded = response.Succeed;
+                request.Message = response.Message;
+            }
+            else
+            {
+                request.Succeeded = response.Succeed;
+                request.Pacientes = (List<Patient>)response.Data!;
+            }
+            return View(request);
+        }
 
         [Authorize(Roles = "Admin, Enfermeria")]
         [HttpGet]
