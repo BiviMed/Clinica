@@ -93,10 +93,12 @@ namespace ClinicaBase.Controllers
             return View(request);
         }
 
-        [Authorize(Roles = "Admin, Enfermeria")]
+
+        [Authorize(Roles = "Admin, Medico, Enfermeria")]
         [HttpGet]
-        public IActionResult ActualizarInfo()
+        public IActionResult ActualizarInfo(int documento)
         {
+            Console.WriteLine(documento);
             return View();
         }
 

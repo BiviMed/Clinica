@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "m6oypyP3npBQsTggRXFwm9ZCiWHWn2xCRm2JX4ADcSY=",
+  "Hash": "HuleInmDQ8NkoyvH0Rv4/TCHxZQHpy4tqpp6PiL8+M8=",
   "Source": "ClinicaBase",
   "BasePath": "_content/ClinicaBase",
   "Mode": "Default",
@@ -253,6 +253,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\orden.png"
+    },
+    {
+      "Identity": "C:\\Users\\Biviana\\Desktop\\Clinica\\ClinicaBase\\wwwroot\\img\\revision-medica.png",
+      "SourceId": "ClinicaBase",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Biviana\\Desktop\\Clinica\\ClinicaBase\\wwwroot\\",
+      "BasePath": "_content/ClinicaBase",
+      "RelativePath": "img/revision-medica.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\revision-medica.png"
     },
     {
       "Identity": "C:\\Users\\Biviana\\Desktop\\Clinica\\ClinicaBase\\wwwroot\\js\\site.js",

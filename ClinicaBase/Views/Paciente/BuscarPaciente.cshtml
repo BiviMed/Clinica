@@ -1,4 +1,6 @@
-﻿@model ClinicaBase.Models.ViewModels.BuscarPacienteViewModel
+﻿@using System.Security.Claims;
+
+@model ClinicaBase.Models.ViewModels.BuscarPacienteViewModel
 @*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
@@ -40,18 +42,58 @@
         }
     }
 
-    <form asp-action="ActualizarInfo">
-        @if (Model != null)
+
+    @if (Model != null)
+    {
+        @if (Model.Pacientes != null)
         {
-            @if (Model.Pacientes != null)
-            {
-                foreach (var paciente in Model.Pacientes)
+            <table class="table" style="text-align:center">
+                <thead>
+                    <tr>
+                        <th>Documento</th>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+
+                @foreach (var paciente in Model.Pacientes)
                 {
-                    <div>
-                        @paciente.Documento
-                    </div>
+                    <tbody>
+                        <tr>
+                            <td>@paciente.Documento</td>
+                            <td>@paciente.Nombres</td>
+                            <td>@paciente.Apellidos</td>
+                            <td>
+                                @{
+                                    string? rol = User.FindFirstValue(ClaimTypes.Role);
+                                    if (rol == "Admin" || rol == "Medico" || rol == "Enfermeria")
+                                    {
+                                        <a asp-action="ActualizarInfo" asp-route-documento="@paciente.Documento" class="btn btn-primary mt-1 mb-1">
+                                            Editar
+                                            <i class="bi bi-pencil-square"></i>
+                                        </a>
+                                    }
+
+                                    if (rol == "Admin" || rol == "Medico")
+                                    {
+                                        <button type="submit" asp-action="ActualizarInfo" class="btn btn-success">
+                                            Control
+                                            <i class="bi bi-file-medical"></i>
+                                        </button>
+                                    }
+                                }
+
+                            </td>
+                        </tr>
+                    </tbody>
                 }
-            }
+
+            </table>
+
         }
-    </form>
+
+
+    }
+
 </div>

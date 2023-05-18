@@ -53,6 +53,10 @@
       "PackagePath": "staticwebassets\\img\\orden.png"
     },
     {
+      "Id": "C:\\Users\\Biviana\\Desktop\\Clinica\\ClinicaBase\\wwwroot\\img\\revision-medica.png",
+      "PackagePath": "staticwebassets\\img\\revision-medica.png"
+    },
+    {
       "Id": "C:\\Users\\Biviana\\Desktop\\Clinica\\ClinicaBase\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
