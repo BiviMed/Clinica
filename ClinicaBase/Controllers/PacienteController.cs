@@ -1,4 +1,6 @@
-﻿using ClinicaBase.Data;
+﻿using AutoMapper;
+using Azure.Core;
+using ClinicaBase.Data;
 using ClinicaBase.Models.Entities;
 using ClinicaBase.Models.ViewModels;
 using ClinicaBase.Responses;
@@ -6,6 +8,7 @@ using ClinicaBase.Services.ServicioPacientes;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using System.Xml;
 
 namespace ClinicaBase.Controllers
 {
@@ -58,7 +61,7 @@ namespace ClinicaBase.Controllers
             {                
                 return View(request);
             }
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Home", response);
         }
 
         [Authorize(Roles = "Admin, Enfermeria")]
@@ -79,7 +82,7 @@ namespace ClinicaBase.Controllers
                 return View(request);
             }
 
-            GeneralResponse response = await _servicioPaciente.BuscarPaciente(request);
+            GeneralResponse response = await _servicioPaciente.BuscarPacientes(request);
             if (response.Succeed == 0)
             {
                 request.Succeeded = response.Succeed;
@@ -96,10 +99,52 @@ namespace ClinicaBase.Controllers
 
         [Authorize(Roles = "Admin, Medico, Enfermeria")]
         [HttpGet]
-        public IActionResult ActualizarInfo(int documento)
+        public async Task<IActionResult> ActualizarInfo(int documento)
         {
-            Console.WriteLine(documento);
-            return View();
+            GeneralResponse response = await _servicioPaciente.BuscarPaciente(documento);
+            if (response.Succeed == 0)
+            {
+                return RedirectToAction("BuscarPaciente", "Paciente");
+            }
+
+            Patient paciente = (Patient)response.Data!;
+
+            _servicioPaciente.MapearPacienteAEditarPaciente(paciente, out EditarPacieteViewModel editarPaciente);
+            
+            return View(editarPaciente);
+        }
+
+        [Authorize(Roles = "Admin, Medico, Enfermeria")]
+        [HttpPost]
+        public async Task<IActionResult> ActualizarInfo(EditarPacieteViewModel editarRequest)
+        {
+            GeneralResponse response = new();
+            response = await _servicioPaciente.BuscarPaciente(editarRequest.Documento);
+
+            if (response.Succeed == 0)
+            {
+                editarRequest.Succeeded = response.Succeed;
+                editarRequest.Message = response.Message;
+                return View(editarRequest);
+            }
+            Patient paciente = (Patient)response.Data!;
+            _servicioPaciente.MapearEditarPacienteAPaciente(paciente, editarRequest, out Patient pacienteActualizado);
+
+            if (pacienteActualizado == null)
+            {
+                editarRequest.Succeeded = 0;
+                editarRequest.Message = "Se ha generado un error inesperado";
+                return View(editarRequest);
+            }
+            response = await _servicioPaciente.ActializarInformacion(pacienteActualizado);
+
+            if (response.Succeed == 0)
+            {
+                editarRequest.Succeeded = response.Succeed;
+                editarRequest.Message = response.Message;
+                return View(editarRequest);
+            }
+            return RedirectToAction("Index", "Home", response);
         }
 
     }
