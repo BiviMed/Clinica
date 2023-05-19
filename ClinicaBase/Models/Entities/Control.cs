@@ -9,9 +9,7 @@ namespace ClinicaBase.Models.Entities;
 public partial class Control
 {
     [Key]
-    [StringLength(200)]
-    [Unicode(false)]
-    public string Id { get; set; } = null!;
+    public Guid Id { get; set; }
 
     public int PatientId { get; set; }
 
