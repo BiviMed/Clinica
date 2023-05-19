@@ -77,10 +77,19 @@
 
                                     if (rol == "Admin" || rol == "Medico")
                                     {
-                                        <button type="submit" asp-action="ActualizarInfo" class="btn btn-success">
-                                            Control
+                                        IDictionary<string, string> data = new Dictionary<string, string>();
+                                        data.Add("Documento", $"{paciente.Documento}");
+                                        data.Add("Nombres", $"{paciente.Nombres}");
+                                        data.Add("Apellidos", $"{paciente.Apellidos}");
+
+                                        <a asp-action="NuevoControl" asp-all-route-data="data" class="btn btn-success">
+                                            Nuevo Control
                                             <i class="bi bi-file-medical"></i>
-                                        </button>
+                                        </a>
+                                       
+                                        <a class="btn btn-secondary">                                           
+                                            <i class="bi bi-eye"></i>
+                                        </a>
                                     }
                                 }
 

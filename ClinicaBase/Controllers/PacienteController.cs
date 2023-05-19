@@ -64,14 +64,16 @@ namespace ClinicaBase.Controllers
             return RedirectToAction("Index", "Home", response);
         }
 
-        [Authorize(Roles = "Admin, Enfermeria")]
+
+        [Authorize(Roles = "Admin,Medico,Enfermeria")]
         [HttpGet]
         public IActionResult BuscarPaciente()
         {            
             return View();
         }
 
-        [Authorize(Roles = "Admin, Enfermeria")]
+
+        [Authorize(Roles = "Admin,Medico,Enfermeria")]
         [HttpPost]
         public async Task<IActionResult> BuscarPaciente(BuscarPacienteViewModel request)
         {
@@ -97,7 +99,7 @@ namespace ClinicaBase.Controllers
         }
 
 
-        [Authorize(Roles = "Admin, Medico, Enfermeria")]
+        [Authorize(Roles = "Admin,Medico,Enfermeria")]
         [HttpGet]
         public async Task<IActionResult> ActualizarInfo(int documento)
         {
@@ -114,7 +116,8 @@ namespace ClinicaBase.Controllers
             return View(editarPaciente);
         }
 
-        [Authorize(Roles = "Admin, Medico, Enfermeria")]
+
+        [Authorize(Roles = "Admin,Medico,Enfermeria")]
         [HttpPost]
         public async Task<IActionResult> ActualizarInfo(EditarPacieteViewModel editarRequest)
         {
@@ -146,6 +149,69 @@ namespace ClinicaBase.Controllers
             }
             return RedirectToAction("Index", "Home", response);
         }
+
+
+        [Authorize(Roles = "Admin,Medico")]
+        [HttpGet]
+        public IActionResult NuevoControl(Dictionary<string, string> dataPaciente)
+        {
+            if (dataPaciente != null)
+            {
+                try
+                {
+                    int doc = Int32.Parse(dataPaciente["Documento"]);
+                    NuevoControleViewModel control = new()
+                    {
+                        PatientId = doc,
+                        Nombres = dataPaciente["Nombres"],
+                        Apellidos = dataPaciente["Apellidos"]
+                    };
+                    return View(control);
+                }
+                catch (Exception)
+                {}                
+            }
+            GeneralResponse response = new()
+            {
+                Succeed = 0,
+                Message = "Se ha generado un error inesperado"
+            };
+            return RedirectToAction("Error", "Paciente", response);
+        }
+
+
+        [Authorize(Roles = "Admin,Medico")]
+        [HttpPost]
+        public async Task<IActionResult> NuevoControl(NuevoControleViewModel request)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(request);
+            }
+
+            int usuarioId = Int32.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
+            GeneralResponse response = await _servicioPaciente.AgregarControl(usuarioId, request);
+            if (response.Succeed == 0)
+            {
+                request.Succeeded = 0;
+                request.Message = response.Message;
+                return View(request);
+            }            
+            return RedirectToAction("Index", "Home", response);
+        }
+
+
+        [Authorize]
+        [HttpGet]
+        public IActionResult Error(GeneralResponse? response)
+        {
+            if (response != null)
+            {
+                return View(response);
+            }
+            return View();
+        }
+
 
     }
 }

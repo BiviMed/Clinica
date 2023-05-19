@@ -26,6 +26,8 @@ public partial class ClinicaBase1Context : DbContext
     {
         modelBuilder.Entity<Control>(entity =>
         {
+            entity.Property(e => e.Id).ValueGeneratedNever();
+
             entity.HasOne(d => d.Patient).WithMany(p => p.Controls)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Controls_Patients");

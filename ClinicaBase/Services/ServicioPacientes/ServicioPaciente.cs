@@ -37,7 +37,7 @@ namespace ClinicaBase.Services.ServicioPacientes
                     await _context.Patients.AddAsync(paciente);
                     await _context.SaveChangesAsync();
                     response.Succeed = 1;
-                    response.Message = "Historia del paciente añadida con éxito.";
+                    response.Message = "Información del paciente añadida con éxito.";
                 }
                 catch (Exception)
                 {
@@ -101,8 +101,11 @@ namespace ClinicaBase.Services.ServicioPacientes
                     response.Succeed = 0;
                     response.Message = "Paciente no encontrado";
                 }
-                response.Succeed = 1;
-                response.Data = paciente;
+                else
+                {
+                    response.Succeed = 1;
+                    response.Data = paciente;
+                }                
             }
             catch (Exception)
             {
@@ -111,7 +114,6 @@ namespace ClinicaBase.Services.ServicioPacientes
             }
             return response;
         }
-
         
 
         public async Task<GeneralResponse> ActializarInformacion(Patient editarPaciente)
@@ -122,7 +124,7 @@ namespace ClinicaBase.Services.ServicioPacientes
                 _context.Patients.Entry(editarPaciente).State = EntityState.Modified;
                 await _context.SaveChangesAsync();
                 response.Succeed = 1;
-                response.Message = "Paciente actualizado correctamente.";
+                response.Message = "Información del paciente actualizada correctamente.";
             }
             catch (Exception)
             {
@@ -131,6 +133,7 @@ namespace ClinicaBase.Services.ServicioPacientes
 
             return response;
         }
+
 
         public void MapearPacienteAEditarPaciente(Patient paciente, out EditarPacieteViewModel editarPaciente)
         {
@@ -156,6 +159,7 @@ namespace ClinicaBase.Services.ServicioPacientes
             };
         }
 
+
         public void MapearEditarPacienteAPaciente(Patient paciente, EditarPacieteViewModel editarPaciente, out Patient pacienteActualizado)
         {
             paciente.Nombres = editarPaciente.Nombres;
@@ -176,5 +180,58 @@ namespace ClinicaBase.Services.ServicioPacientes
             pacienteActualizado = paciente;
         }
 
+
+        public async Task<GeneralResponse> AgregarControl(int usuarioId, NuevoControleViewModel nuevoControl)
+        {
+            GeneralResponse response = new();
+            response = await VerificarInfoPaciente(usuarioId, nuevoControl.PatientId, nuevoControl.Nombres, nuevoControl.Apellidos);
+            if (response.Succeed == 0)
+            {
+                return response;
+            }
+
+            Control control = _mapper.Map<Control>(nuevoControl);
+            control.Id = Guid.NewGuid();
+            control.UserId = usuarioId;
+            control.Fecha = DateTime.Now;
+
+            try
+            {
+                await _context.Controls.AddAsync(control);
+                await _context.SaveChangesAsync();
+                response.Succeed = 1;
+                response.Message = "Control agregado con éxito.";
+            }
+            catch (Exception)
+            {
+                response.Succeed = 0;
+                response.Message = "Se ha generado un error al momento de guardar la información, por favor vuelva a intentarlo.";               
+            }
+            return response;
+        }
+
+
+        private async Task<GeneralResponse> VerificarInfoPaciente(int usuarioId, int pacienteId, string nombres, string apellidos)
+        {
+            GeneralResponse response = await BuscarPaciente(pacienteId);
+            if (response.Succeed == 0)
+            {
+                response.Message = "Paciente no encontrado";
+            }
+            else
+            {
+                var paciente = (Patient)response.Data!;
+                if (nombres != paciente.Nombres || apellidos != paciente.Apellidos)
+                {
+                    response.Succeed = 0;
+                    response.Message = "Paciente no encontrado";
+                }
+                else
+                {
+                    response.Succeed = 1;
+                }
+            }
+            return response;
+        }
     }
 }

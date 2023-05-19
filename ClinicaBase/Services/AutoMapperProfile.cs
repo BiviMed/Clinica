@@ -9,6 +9,7 @@ namespace ClinicaBase.Services
         public AutoMapperProfile()
         {
             CreateMap<PacienteViewModel, Patient>();
+            CreateMap<NuevoControleViewModel, Control>();
         }
     }
 }
