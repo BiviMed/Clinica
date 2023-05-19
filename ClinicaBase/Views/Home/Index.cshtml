@@ -13,11 +13,24 @@
         {
             if (Model.Succeed == 1)
             {
-                <div class="alert alert-success alert-dismissible fade show" role="alert">
-                    @Model.Message
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                <div class="container">
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        @Model.Message
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
                 </div>
+                
+            }
 
+            if (Model.Succeed == 0)
+            {
+                <div class="container">
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        @Model.Message
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                </div>
+                
             }
         }
     }
@@ -39,20 +52,12 @@
             </div>
 
             <div class="card text-center" style="width: 18rem;">
-                <img src="~/img/editar-info.png" class="card-img-top" alt="...">
+                <img src="~/img/revision-medica.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title mb-2">Información del Paciente</h5>
-                    <a href="#" class="btn btn-primary">Gestionar Información</a>
+                    <h5 class="card-title mb-2">Pacientes</h5>
+                    <a asp-controller="Paciente" asp-action="BuscarPaciente" class="btn btn-primary">Ir a Pacientes</a>
                 </div>
-            </div>
-
-            <div class="card text-center" style="width: 18rem;">
-                <img src="~/img/examen.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title mb-2">Controles</h5>
-                    <a href="#" class="btn btn-primary">Nuevo Control</a>
-                </div>
-            </div>
+            </div>           
 
             <div class="card text-center" style="width: 18rem;">
                 <img src="~/img/empleados-consultorio.png" class="card-img-top" alt="...">
@@ -75,18 +80,10 @@
             </div>
 
             <div class="card text-center" style="width: 18rem;">
-                <img src="~/img/editar-info.png" class="card-img-top" alt="...">
+                <img src="~/img/revision-medica.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title mb-2">Información del Paciente</h5>
-                    <a href="#" class="btn btn-primary">Información</a>
-                </div>
-            </div>
-
-            <div class="card text-center" style="width: 18rem;">
-                <img src="~/img/examen.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title mb-2">Controles</h5>
-                    <a href="#" class="btn btn-primary">Nuevo Control</a>
+                    <h5 class="card-title mb-2">Pacientes</h5>
+                    <a asp-controller="Paciente" asp-action="BuscarPaciente" class="btn btn-primary">Ir a Pacientes</a>
                 </div>
             </div>
         </div>
@@ -103,12 +100,12 @@
             </div>
 
             <div class="card text-center" style="width: 18rem;">
-                <img src="~/img/editar-info.png" class="card-img-top" alt="...">
+                <img src="~/img/revision-medica.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title mb-2">Información del Paciente</h5>
-                    <a href="#" class="btn btn-primary">Información</a>
+                    <h5 class="card-title mb-2">Pacientes</h5>
+                    <a asp-controller="Paciente" asp-action="BuscarPaciente" class="btn btn-primary">Ir a Pacientes</a>
                 </div>
-            </div>            
+            </div>
         </div>
     }
     else if (rol == "Recursos Humanos")

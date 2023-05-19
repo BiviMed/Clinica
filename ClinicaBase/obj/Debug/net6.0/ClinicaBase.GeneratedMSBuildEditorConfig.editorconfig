@@ -9,57 +9,61 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ClinicaBase
 build_property.RootNamespace = ClinicaBase
-build_property.ProjectDir = C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase\
+build_property.ProjectDir = C:\Users\Biviana\Desktop\Clinica\ClinicaBase\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Biviana\Desktop\Remote Git\Clinica\ClinicaBase
+build_property.MSBuildProjectDirectory = C:\Users\Biviana\Desktop\Clinica\ClinicaBase
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Biviana/Desktop/Remote Git/Clinica/ClinicaBase/Views/Auth/Inicio.cshtml]
+[C:/Users/Biviana/Desktop/Clinica/ClinicaBase/Views/Auth/Inicio.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxJbmljaW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Biviana/Desktop/Remote Git/Clinica/ClinicaBase/Views/Auth/Login.cshtml]
+[C:/Users/Biviana/Desktop/Clinica/ClinicaBase/Views/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Biviana/Desktop/Remote Git/Clinica/ClinicaBase/Views/Auth/Register.cshtml]
+[C:/Users/Biviana/Desktop/Clinica/ClinicaBase/Views/Auth/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Biviana/Desktop/Remote Git/Clinica/ClinicaBase/Views/Auth/_Layout.cshtml]
+[C:/Users/Biviana/Desktop/Clinica/ClinicaBase/Views/Auth/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxfTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Biviana/Desktop/Remote Git/Clinica/ClinicaBase/Views/Home/Index.cshtml]
+[C:/Users/Biviana/Desktop/Clinica/ClinicaBase/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Biviana/Desktop/Remote Git/Clinica/ClinicaBase/Views/Paciente/ActualizarInfo.cshtml]
+[C:/Users/Biviana/Desktop/Clinica/ClinicaBase/Views/Paciente/ActualizarInfo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFjaWVudGVcQWN0dWFsaXphckluZm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Biviana/Desktop/Remote Git/Clinica/ClinicaBase/Views/Paciente/Agregar.cshtml]
+[C:/Users/Biviana/Desktop/Clinica/ClinicaBase/Views/Paciente/Agregar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFjaWVudGVcQWdyZWdhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Biviana/Desktop/Remote Git/Clinica/ClinicaBase/Views/Shared/Error.cshtml]
+[C:/Users/Biviana/Desktop/Clinica/ClinicaBase/Views/Paciente/BuscarPaciente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFjaWVudGVcQnVzY2FyUGFjaWVudGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Biviana/Desktop/Clinica/ClinicaBase/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Biviana/Desktop/Remote Git/Clinica/ClinicaBase/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Biviana/Desktop/Clinica/ClinicaBase/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Biviana/Desktop/Remote Git/Clinica/ClinicaBase/Views/_ViewImports.cshtml]
+[C:/Users/Biviana/Desktop/Clinica/ClinicaBase/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Biviana/Desktop/Remote Git/Clinica/ClinicaBase/Views/_ViewStart.cshtml]
+[C:/Users/Biviana/Desktop/Clinica/ClinicaBase/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Biviana/Desktop/Remote Git/Clinica/ClinicaBase/Views/Shared/_Layout.cshtml]
+[C:/Users/Biviana/Desktop/Clinica/ClinicaBase/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-suvl3exzqc

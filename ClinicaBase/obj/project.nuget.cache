@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nLAqdJtYhHyBB9xKfILUAOHVwT4Fz8i5HhI9bjhyYR2Zgh2zwTY3l6GD4nJitagtD6nILXXrbecJUGtsJUFq1Q==",
+  "dgSpecHash": "7xTZiIsRcLz/s6dm/Yd3+wCGfwZv2YZY339gHj2H+r3O9xzlnDRXQoHCptMlIqUAKNOnCkC5OUOY2ayy0N0oAA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Biviana\\Desktop\\Remote Git\\Clinica\\ClinicaBase\\ClinicaBase.csproj",
+  "projectFilePath": "C:\\Users\\Biviana\\Desktop\\Clinica\\ClinicaBase\\ClinicaBase.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Biviana\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Biviana\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

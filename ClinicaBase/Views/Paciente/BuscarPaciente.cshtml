@@ -1,0 +1,99 @@
+﻿@using System.Security.Claims;
+
+@model ClinicaBase.Models.ViewModels.BuscarPacienteViewModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="container">
+    <div class="text-center mb-5">
+        <h1>Buscar Paciente</h1>
+    </div>
+
+    <form asp-action="BuscarPaciente">
+        <div class="mb-2">
+            <label class="form-label">Documento</label>
+            <input class="form-control" asp-for="Documento" />
+        </div>
+        <div class="mb-2">
+            <label class="form-label">Nombres</label>
+            <input class="form-control" asp-for="Nombres" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Apellidos</label>
+            <input class="form-control" asp-for="Apellidos" />
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Buscar</button>
+        </div>
+    </form>
+
+    @if (Model != null)
+    {
+        if (Model.Succeeded == 0 && Model.Message != null)
+        {
+            <div class="mb-3">
+                <div class="alert alert-danger" role="alert">
+                    @Model.Message
+                </div>
+            </div>
+        }
+    }
+
+
+    @if (Model != null)
+    {
+        @if (Model.Pacientes != null)
+        {
+            <table class="table" style="text-align:center">
+                <thead>
+                    <tr>
+                        <th>Documento</th>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+
+                @foreach (var paciente in Model.Pacientes)
+                {
+                    <tbody>
+                        <tr>
+                            <td>@paciente.Documento</td>
+                            <td>@paciente.Nombres</td>
+                            <td>@paciente.Apellidos</td>
+                            <td>
+                                @{
+                                    string? rol = User.FindFirstValue(ClaimTypes.Role);
+                                    if (rol == "Admin" || rol == "Medico" || rol == "Enfermeria")
+                                    {
+                                        <a asp-action="ActualizarInfo" asp-route-documento="@paciente.Documento" class="btn btn-primary mt-1 mb-1">
+                                            Editar
+                                            <i class="bi bi-pencil-square"></i>
+                                        </a>
+                                    }
+
+                                    if (rol == "Admin" || rol == "Medico")
+                                    {
+                                        <button type="submit" asp-action="ActualizarInfo" class="btn btn-success">
+                                            Control
+                                            <i class="bi bi-file-medical"></i>
+                                        </button>
+                                    }
+                                }
+
+                            </td>
+                        </tr>
+                    </tbody>
+                }
+
+            </table>
+
+        }
+
+
+    }
+
+</div>

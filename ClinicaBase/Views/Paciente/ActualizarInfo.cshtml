@@ -1,5 +1,142 @@
-﻿@*
+﻿@model ClinicaBase.Models.ViewModels.EditarPacieteViewModel
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+}
+
+<div class="container">
+    <div class="text-center mt-3 mb-4">
+        <h1>Actualizar Información del Paciente</h1>
+    </div>
+
+    <div class="text-center">
+        <div class="mb-3">
+            <label>@Model.Documento</label>
+        </div>
+
+        <div class="mb-3">
+            <label>@Model.Nombres</label>
+        </div>
+
+        <div class="mb-3">
+            <label>@Model.Apellidos</label>
+        </div>
+    </div>
+
+    @{
+        if (Model != null)
+        {
+            if (Model.Succeeded == 0 && Model.Message != null)
+            {
+                <div>
+                    <div class="alert alert-danger" role="alert">
+                        @Model.Message
+                    </div>
+                </div>
+            }
+        }
+    }
+
+    <div class="">
+        <form asp-action="ActualizarInfo">
+            <div asp-validation-summary="ModelOnly"></div>
+                       
+            <input asp-for="Documento" value="@Model!.Documento" readonly="readonly" hidden="hidden" />
+
+            <div class="mb-3">
+                <label class="form-label">Nombres</label>
+                <input class="form-control" asp-for="Nombres" />
+                <span asp-validation-for="Nombres"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Apellidos</label>
+                <input class="form-control" asp-for="Apellidos" />
+                <span asp-validation-for="Apellidos"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Correo</label>
+                <input class="form-control" asp-for="Correo" />
+                <span asp-validation-for="Correo"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Direccion</label>
+                <input class="form-control" asp-for="Direccion" />
+                <span asp-validation-for="Direccion"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Telefono</label>
+                <input class="form-control" asp-for="Telefono" />
+                <span asp-validation-for="Telefono"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Profesion</label>
+                <input class="form-control" asp-for="Profesion" />
+                <span asp-validation-for="Profesion"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Ocupacion</label>
+                <input class="form-control" asp-for="Ocupacion" />
+                <span asp-validation-for="Ocupacion"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">NombreFamiliar</label>
+                <input class="form-control" asp-for="NombreFamiliar" />
+                <span asp-validation-for="NombreFamiliar"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">TelefonoFamiliar</label>
+                <input class="form-control" asp-for="TelefonoFamiliar" />
+                <span asp-validation-for="TelefonoFamiliar"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">TipoEps</label>
+                <input class="form-control" asp-for="TipoEps" />
+                <span asp-validation-for="TipoEps"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">NombreEps</label>
+                <input class="form-control" asp-for="NombreEps" />
+                <span asp-validation-for="NombreEps"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">ExamenFisico</label>
+                <input class="form-control" asp-for="ExamenFisico" />
+                <span asp-validation-for="ExamenFisico"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Antecedentes</label>
+                <input class="form-control" asp-for="Antecedentes" />
+                <span asp-validation-for="Antecedentes"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">AntecedentesFarmac</label>
+                <input class="form-control" asp-for="AntecedentesFarmac" />
+                <span asp-validation-for="AntecedentesFarmac"></span>
+            </div>
+
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary">
+                    Actualizar
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationscriptsPartial" />
 }
