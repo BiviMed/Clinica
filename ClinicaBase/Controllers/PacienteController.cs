@@ -201,6 +201,21 @@ namespace ClinicaBase.Controllers
         }
 
 
+        [Authorize(Roles = "Admin,Medico")]
+        [HttpGet]
+        public async Task<IActionResult> Controles(int documento)
+        {
+            GeneralResponse response = await _servicioPaciente.BuscarControlesById(documento);
+            if (response.Succeed == 0)
+            {
+                return View();
+            }
+
+            var controles = (ControlesViewModel)response.Data!;
+            return View(controles);
+        }
+
+
         [Authorize]
         [HttpGet]
         public IActionResult Error(GeneralResponse? response)
