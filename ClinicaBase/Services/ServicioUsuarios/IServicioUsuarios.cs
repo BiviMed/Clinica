@@ -7,5 +7,6 @@ namespace ClinicaBase.Services.ServicioUsuarios
     {
         public Task<GeneralResponse> AddUsuario(RegisterViewModel request);
         public Task<GeneralResponse> Auth(UsuarioAuthViewModel request);
+        public Task<GeneralResponse> FindAllUsers();
     }
 }

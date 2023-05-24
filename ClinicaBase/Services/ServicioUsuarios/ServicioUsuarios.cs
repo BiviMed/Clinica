@@ -156,5 +156,44 @@ namespace ClinicaBase.Services.ServicioUsuarios
             }
             return response;
         }
+
+
+        public async Task<GeneralResponse> FindAllUsers()
+        {
+            GeneralResponse response = new();
+            try
+            {
+                List<UserDTO>? usuarios = new();
+                List<User>? usuariosDB = await _context.Users.ToListAsync();
+                if (usuariosDB.Count == 0)
+                {
+                    usuarios = null;
+                }
+                else
+                {
+                    foreach (var usuario in usuariosDB)
+                    {
+                        UserDTO userDTO = new()
+                        {
+                            Documento = usuario.Documento,
+                            Nombres = usuario.Nombres,
+                            Apellidos = usuario.Apellidos,
+                            Correo = usuario.Correo,
+                            Telefono = usuario.Telefono
+                        };
+                        usuarios.Add(userDTO);
+                    }
+                }                
+
+                response.Succeed = 1;
+                response.Data = usuarios;
+            }
+            catch (Exception)
+            {
+                response.Succeed = 0;
+                response.Data = null;
+            }
+            return response;
+        }
     }
 }

@@ -1,0 +1,55 @@
+﻿@using System.Security.Claims;
+@model ClinicaBase.Models.ViewModels.UsuariosViewModel
+
+@{
+    ViewData["Title"] = "Usuarios";
+}
+
+
+<div class="container">
+    <div class="text-center">
+        <div class="m-4">
+            <h1>Usuarios</h1>
+        </div>
+
+        <div class="">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Documento</th>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Correo</th>
+                        <th>Telefono</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                @{
+                    if(Model != null)
+                    {
+                        if (Model.Usuarios != null)
+                        {
+                            <tbody>
+                                @foreach (var usuario in Model.Usuarios)
+                                {
+                                    <tr>
+                                        <td>@usuario.Documento</td>
+                                        <td>@usuario.Nombres</td>
+                                        <td>@usuario.Apellidos</td>
+                                        <td>@usuario.Correo</td>
+                                        <td>@usuario.Telefono</td>
+                                        <td>
+                                            <button class="btn btn-primary">Editar</button>
+                                            <button class="btn btn-danger">Eliminar</button>
+                                        </td>                                                                               
+                                    </tr>                                
+                                }                                
+                            </tbody>
+                        }
+                    }
+                }
+            </table>
+        </div>
+    </div>
+</div>
