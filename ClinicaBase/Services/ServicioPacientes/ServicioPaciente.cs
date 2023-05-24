@@ -233,5 +233,42 @@ namespace ClinicaBase.Services.ServicioPacientes
             }
             return response;
         }
+
+
+        public async Task<GeneralResponse> BuscarControlesById(int documento)
+        {
+            GeneralResponse response = await BuscarPaciente(documento);
+            if (response.Succeed == 0)
+            {
+                return response;
+            }
+
+            try
+            {
+                Patient paciente = (Patient)response.Data!;
+                ControlesViewModel controles = new()
+                {
+                    Documento = paciente.Documento,
+                    Nombres = paciente.Nombres,
+                    Apellidos = paciente.Apellidos
+                };
+
+                var controlesPaciente = (from control in _context.Controls
+                                         where control.PatientId == paciente.Documento
+                                         select control
+                                       ).ToList();
+
+                controles.Controles = controlesPaciente;
+                response.Succeed = 1;
+                response.Data = controles;
+            }
+            catch (Exception)
+            {
+                response.Succeed = 0;
+                response.Message = "Ha sucedido un error inesperado y no se han podido cargar los controles del paciente";
+                response.Data = null;
+            }
+            return response;
+        }
     }
 }

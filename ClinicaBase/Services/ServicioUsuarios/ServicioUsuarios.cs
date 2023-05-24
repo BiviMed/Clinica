@@ -87,7 +87,6 @@ namespace ClinicaBase.Services.ServicioUsuarios
             response.Data = userClaims;
             response.Message = null;
 
-
             return response;
         }
 
@@ -105,7 +104,6 @@ namespace ClinicaBase.Services.ServicioUsuarios
                 {
                     response = true;
                 }
-
             }
             catch (Exception)
             {

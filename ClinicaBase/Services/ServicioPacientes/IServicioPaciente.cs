@@ -9,6 +9,7 @@ namespace ClinicaBase.Services.ServicioPacientes
         public Task<GeneralResponse> ActializarInformacion(Patient editarPaciente);
         public Task<GeneralResponse> AgregarControl(int usuarioId, NuevoControleViewModel control);
         public Task<GeneralResponse> AgregarHistoriaClinica(PacienteViewModel request);
+        public Task<GeneralResponse> BuscarControlesById(int pacienteId);
         public Task<GeneralResponse> BuscarPaciente(int documentoRequest);
         public Task<GeneralResponse> BuscarPacientes(BuscarPacienteViewModel pacienteViewModel);
         public void MapearEditarPacienteAPaciente(Patient paciente, EditarPacieteViewModel editarPaciente, out Patient pacienteActualizado);
