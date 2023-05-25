@@ -8,6 +8,6 @@ namespace ClinicaBase.Models.ViewModels
 
         public int? Exitoso { get; set; } = null;
 
-        public string Mensaje { get; set; } = null!;
+        public string? Mensaje { get; set; } = null;
     }
 }

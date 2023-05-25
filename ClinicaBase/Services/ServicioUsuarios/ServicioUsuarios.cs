@@ -164,7 +164,7 @@ namespace ClinicaBase.Services.ServicioUsuarios
             try
             {
                 List<UserDTO>? usuarios = new();
-                List<User>? usuariosDB = await _context.Users.ToListAsync();
+                List<User>? usuariosDB = await _context.Users.Where(u => u.Activo == 1).ToListAsync();
                 if (usuariosDB.Count == 0)
                 {
                     usuarios = null;
@@ -179,7 +179,8 @@ namespace ClinicaBase.Services.ServicioUsuarios
                             Nombres = usuario.Nombres,
                             Apellidos = usuario.Apellidos,
                             Correo = usuario.Correo,
-                            Telefono = usuario.Telefono
+                            Telefono = usuario.Telefono,
+                            Rol = usuario.Rol
                         };
                         usuarios.Add(userDTO);
                     }
@@ -192,6 +193,41 @@ namespace ClinicaBase.Services.ServicioUsuarios
             {
                 response.Succeed = 0;
                 response.Data = null;
+            }
+            return response;
+        }
+
+        public async Task<User?> FindById(int documento)
+        {
+            User? usuario = await _context.Users.Where(u => u.Documento == documento).FirstOrDefaultAsync();
+            return usuario;
+        }
+
+        public async Task<GeneralResponse> DeleteUser(EliminarUsuarioViewModel usuarioEliminar)
+        {
+            GeneralResponse response = new();
+            
+            User? usuario = await FindById(usuarioEliminar.Documento);
+            if (usuario != null)
+            {
+                usuario.Activo = 0;
+                try
+                {
+                    _context.Users.Entry(usuario).State = EntityState.Modified;
+                    await _context.SaveChangesAsync();
+                    response.Succeed = 1;
+                    response.Message = "Usuario eliminado con éxito";
+                }
+                catch (Exception)
+                {
+                    response.Succeed = 0;
+                    response.Message = "Ha ocurrido un error inesperado y no se ha podido eliminar al usuario";
+                }                
+            }
+            else
+            {
+                response.Succeed = 0;
+                response.Message = "No se ha podido encontrar el usuario";
             }
             return response;
         }

@@ -1,4 +1,5 @@
-﻿using ClinicaBase.Models.ViewModels;
+﻿using ClinicaBase.Models.Entities;
+using ClinicaBase.Models.ViewModels;
 using ClinicaBase.Responses;
 
 namespace ClinicaBase.Services.ServicioUsuarios
@@ -7,6 +8,8 @@ namespace ClinicaBase.Services.ServicioUsuarios
     {
         public Task<GeneralResponse> AddUsuario(RegisterViewModel request);
         public Task<GeneralResponse> Auth(UsuarioAuthViewModel request);
+        public Task<GeneralResponse> DeleteUser(EliminarUsuarioViewModel usuarioEliminar);
         public Task<GeneralResponse> FindAllUsers();
+        public Task<User?> FindById(int documento);
     }
 }
