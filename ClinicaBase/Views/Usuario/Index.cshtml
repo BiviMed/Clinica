@@ -39,7 +39,7 @@
         }
 
         <div class="mb-3">
-            <a asp-controller="Auth" asp-action="Register" class="btn btn-success">Agregar nuevo usuario</a>
+            <a asp-controller="Usuario" asp-action="Register" class="btn btn-success">Agregar nuevo usuario</a>
         </div>
 
         <div class="">
@@ -76,7 +76,7 @@
                                             <td><strong>Acción no disponible</strong></td>                                            
                                         }else{
                                             <td>
-                                                <button class="btn btn-primary">Editar</button>
+                                                <a asp-action="Editar" asp-route-documento="@usuario.Documento" class="btn btn-primary">Editar</a>
                                                 <a asp-action="Eliminar" asp-route-documento="@usuario.Documento" class="btn btn-danger">
                                                     Eliminar
                                                 </a>

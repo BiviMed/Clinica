@@ -87,37 +87,7 @@ namespace ClinicaBase.Controllers
                 await HttpContext.SignOutAsync();
                 return RedirectToAction("Login");
             }
-            return RedirectToAction("Home");
-        }
-
-
-        [HttpGet]
-        [Authorize(Roles = "Admin, Recursos Humanos")]
-        public IActionResult Register()
-        {
-            RegisterViewModel model = new();
-            return View(model);
-        }
-
-        [HttpPost]
-        [Authorize(Roles = "Admin, Recursos Humanos")]
-        public async Task<ActionResult<GeneralResponse>> Register(RegisterViewModel request)
-        {
-            if (!ModelState.IsValid)
-            {
-                return View(request);
-            }
-
-            GeneralResponse response = new();
-            response = await _servicioUsuarios.AddUsuario(request);
-
-            if (response.Succeed == 1)
-            {
-                return RedirectToAction("Index", "Home", response);
-            }            
-            request.Succeed = response.Succeed;
-            request.Message = response.Message;
-            return View(request);
+            return RedirectToAction("Index", "Home");
         }
     }
 }

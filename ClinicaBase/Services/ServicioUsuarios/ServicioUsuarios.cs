@@ -265,5 +265,43 @@ namespace ClinicaBase.Services.ServicioUsuarios
             }
             return response;
         }
+
+
+        public async Task<GeneralResponse> EditarUsuario(EditarUsuarioViewModel request, string rolUsuarioAutenticado)
+        {
+            GeneralResponse response = new();
+            User? usuario = await FindById(request.Documento);
+            if (usuario == null)
+            {
+                response.Succeed = 0;
+                response.Message = "No se ha encontrado el usuario";
+                return response;
+            }
+
+            if (rolUsuarioAutenticado != "Admin" && usuario.Rol == "Admin")
+            {
+                response.Succeed = 0;
+                response.Message = "No tiene permisos para modificar a este usuario";
+                return response;
+            }
+
+            try
+            {
+                usuario.Nombres = request.Nombres;
+                usuario.Apellidos = request.Apellidos;
+                usuario.Rol = request.Rol;
+
+                _context.Users.Entry(usuario).State = EntityState.Modified;
+                await _context.SaveChangesAsync();
+                response.Succeed = 1;
+                response.Message = "Usuario modificado exitosamente";
+            }
+            catch (Exception)
+            {
+                response.Succeed = 0;
+                response.Message = "Se ha generado un error inesperado mientras se intentaba guardar la información, por favor vuelva a intentarlo";
+            }
+            return response;
+        }
     }
 }

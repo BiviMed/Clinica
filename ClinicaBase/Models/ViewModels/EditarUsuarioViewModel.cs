@@ -1,16 +1,13 @@
 ﻿using ClinicaBase.Validations;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.ComponentModel.DataAnnotations;
-using System.Diagnostics.CodeAnalysis;
 
 namespace ClinicaBase.Models.ViewModels
 {
-    public class RegisterViewModel
+    public class EditarUsuarioViewModel
     {
-        private const string RequiredError = "Campo Obligatorio";
+        private const string RequiredError = "Campo obligatorio";
 
-        [Required(ErrorMessage = RequiredError)]
-        [Document]
         public int Documento { get; set; }
 
         [Required(ErrorMessage = RequiredError)]
@@ -19,21 +16,13 @@ namespace ClinicaBase.Models.ViewModels
         [Required(ErrorMessage = RequiredError)]
         public string Apellidos { get; set; } = null!;
 
-        [Required(ErrorMessage = RequiredError)]
-        [EmailAddress]
-        public string Correo { get; set; } = null!;
-
-        [Required(ErrorMessage = RequiredError)]
-        [Phone(ErrorMessage = "Teléfono inválido")]
-        public string Telefono { get; set; } = null!;
-               
-        [Required(ErrorMessage = RequiredError)]
-        [Role]
-        public string Rol { get; set; } = null!;
+        public int? Succeeded { get; set; } = null;
 
         public string? Message { get; set; } = null;
 
-        public int? Succeed { get; set; } = null;
+        [Required(ErrorMessage = RequiredError)]
+        [Role]
+        public string Rol { get; set; } = null!;
 
         public List<SelectListItem> Roles { get; set; } = new List<SelectListItem>
             {
@@ -62,16 +51,6 @@ namespace ClinicaBase.Models.ViewModels
                     Value = "Secretaria",
                     Text = "Secretaria"
                 }
-            };   
-        
-        /*
-            CambioContrasena debe ser 0 o 1;
-                Tan pronto se registra un usuario la contraseña
-                es la misma que el numero de documento pero debe
-                cambiarla.
-
-            Activo debe ser 0 o 1;
-                Si sigue trabajando en la Clinica o no.
-        */
+            };
     }
 }
