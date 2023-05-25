@@ -1,0 +1,40 @@
+﻿@model ClinicaBase.Models.ViewModels.EliminarUsuarioViewModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="container text-center">
+    <div class="m-3">
+        <h1>Eliminar usuario</h1>
+    </div>
+
+    <div class="mb-3">
+        <p>¿Está seguro de que desea eliminar a este usuario?</p> 
+    </div>
+
+    <div class="">
+        <form asp-action="Eliminar" class="">
+            <div class="mb-3">
+                <label class="me-2">Documento: </label>
+                <input asp-for="Documento" class="ps-1" readonly />
+            </div>
+
+            <div class="mb-3">
+                <label class="me-2">Nombres: </label>
+                <input asp-for="Nombres" class="ps-1" readonly />
+            </div>
+
+            <div class="mb-3">
+                <label class="me-2">Apellidos: </label>
+                <input asp-for="Apellidos" class="ps-1" readonly />
+            </div>
+
+            <div>
+                <a asp-action="Index" class="btn btn-secondary">Volver</a>
+                <button type="submit" class="btn btn-danger">Eliminar</button>
+            </div>
+        </form>
+    </div>
+</div>

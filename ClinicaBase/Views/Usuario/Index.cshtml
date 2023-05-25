@@ -1,0 +1,115 @@
+﻿@using System.Security.Claims;
+@model ClinicaBase.Models.ViewModels.UsuariosViewModel
+
+@{
+    ViewData["Title"] = "Usuarios";
+    string rolUsuarioAutenticado = User.FindFirstValue(ClaimTypes.Role);
+}
+
+
+<div class="container">
+    <div class="text-center">
+        <div class="m-4">
+            <h1>Usuarios</h1>
+        </div>
+
+        @{
+            if (Model != null)
+            {
+                if (Model.Mensaje != null)
+                {
+                    <div class="mb-3 text-start">
+                        @if (Model.Exitoso == 0)
+                        {
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                @Model.Mensaje
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        }
+                        else if (Model.Exitoso == 1)
+                        {
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                @Model.Mensaje
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        }
+                    </div>
+                }                 
+            }
+        }
+
+        <div class="mb-3">
+            <a asp-controller="Usuario" asp-action="Register" class="btn btn-success">Agregar nuevo usuario</a>
+        </div>
+
+        <div class="">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Documento</th>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Correo</th>
+                        <th>Telefono</th>
+                        <th>Rol</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                @{
+                    if(Model != null)
+                    {
+                        if (Model.Usuarios != null)
+                        {
+                            <tbody>
+                                @foreach (var usuario in Model.Usuarios)
+                                {
+                                    <tr>
+                                        <td>@usuario.Documento</td>
+                                        <td>@usuario.Nombres</td>
+                                        <td>@usuario.Apellidos</td>
+                                        <td>@usuario.Correo</td>
+                                        <td>@usuario.Telefono</td>
+                                        <td>@usuario.Rol</td>
+                                        @if (rolUsuarioAutenticado != "Admin" && usuario.Rol == "Admin")
+                                        {
+                                            <td><strong>Acción no disponible</strong></td>                                            
+                                        }else{
+                                            <td>
+                                                <a asp-action="Editar" asp-route-documento="@usuario.Documento" class="btn btn-primary">Editar</a>
+                                                <a asp-action="Eliminar" asp-route-documento="@usuario.Documento" class="btn btn-danger">
+                                                    Eliminar
+                                                </a>
+                                            </td>
+                                        }                                                                                                                      
+                                    </tr>                                
+                                }                                
+                            </tbody>
+                        }
+                    }
+                }
+            </table>
+        </div>
+    </div>    
+</div>
+
+<!-- PARA PASAR INFO AL MODAL -->
+@*@section Scripts{
+    <script>
+        $(document).on("click", "#btnModal", function () {
+            var documento = $(this).data('documento');
+
+            $('#doc').val(documento);
+        })
+    </script>
+
+    <script>
+        function ObtenerDocumento(){
+            var documento = $("#doc").val();
+            console.log(documento);
+            console.log(documento);
+            return documento;
+        }
+    </script>
+    
+}*@
