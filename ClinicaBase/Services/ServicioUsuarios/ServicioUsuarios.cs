@@ -99,35 +99,7 @@ namespace ClinicaBase.Services.ServicioUsuarios
                 return response;
             }
         }
-        
-
-        //private void BuscarExistenciaDocumento(int doucumento, out bool response)
-        //{
-        //    try
-        //    {
-        //        User? usuario = _context.Users.Where(u => u.Documento == doucumento).FirstOrDefault();
-        //        if (usuario == null)
-        //        {
-        //            response = false;
-        //        }
-        //        else
-        //        {
-        //            if (usuario.Activo == 0)
-        //            {
-        //                response = false;
-        //            }
-        //            else
-        //            {
-        //                response = true;
-        //            }                    
-        //        }
-        //    }
-        //    catch (Exception)
-        //    {
-        //        response = false;
-        //    }
-        //}
-
+                     
 
         private void NewRegisterModel(RegisterViewModel request, out User? newRequestModel)
         {
@@ -258,13 +230,20 @@ namespace ClinicaBase.Services.ServicioUsuarios
             return usuario;
         }
 
-        public async Task<GeneralResponse> DeleteUser(EliminarUsuarioViewModel usuarioEliminar)
+        public async Task<GeneralResponse> DeleteUser(EliminarUsuarioViewModel usuarioEliminar, string rolUsuarioAutenticado)
         {
             GeneralResponse response = new();
             
             User? usuario = await FindById(usuarioEliminar.Documento);
             if (usuario != null)
             {
+                if (rolUsuarioAutenticado != "Admin" && usuario.Rol == "Admin")
+                {
+                    response.Succeed = 0;
+                    response.Message = "No tiene permisos para eliminar al Administrador";
+                    return response;
+                }
+
                 usuario.Activo = 0;
                 try
                 {

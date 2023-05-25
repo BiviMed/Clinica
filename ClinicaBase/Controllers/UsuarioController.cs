@@ -5,6 +5,7 @@ using ClinicaBase.Responses;
 using ClinicaBase.Services.ServicioUsuarios;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace ClinicaBase.Controllers
 {
@@ -71,8 +72,8 @@ namespace ClinicaBase.Controllers
             {
                 return RedirectToAction("Error");
             }
-
-            GeneralResponse response = await _servicioUsuarios.DeleteUser(request);
+            string rolUsuarioAutenticado = User.FindFirstValue(ClaimTypes.Role);
+            GeneralResponse response = await _servicioUsuarios.DeleteUser(request, rolUsuarioAutenticado);
             return RedirectToAction("Index", response);
 
         }

@@ -3,6 +3,7 @@
 
 @{
     ViewData["Title"] = "Usuarios";
+    string rolUsuarioAutenticado = User.FindFirstValue(ClaimTypes.Role);
 }
 
 
@@ -70,13 +71,17 @@
                                         <td>@usuario.Correo</td>
                                         <td>@usuario.Telefono</td>
                                         <td>@usuario.Rol</td>
-                                        <td>
-                                            <button class="btn btn-primary">Editar</button>
-                                            <a asp-action="Eliminar" asp-route-documento="@usuario.Documento" class="btn btn-danger">
-                                                Eliminar
-                                            </a>
-                                            
-                                        </td>                                                                               
+                                        @if (rolUsuarioAutenticado != "Admin" && usuario.Rol == "Admin")
+                                        {
+                                            <td><strong>Acción no disponible</strong></td>                                            
+                                        }else{
+                                            <td>
+                                                <button class="btn btn-primary">Editar</button>
+                                                <a asp-action="Eliminar" asp-route-documento="@usuario.Documento" class="btn btn-danger">
+                                                    Eliminar
+                                                </a>
+                                            </td>
+                                        }                                                                                                                      
                                     </tr>                                
                                 }                                
                             </tbody>

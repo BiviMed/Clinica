@@ -8,7 +8,7 @@ namespace ClinicaBase.Services.ServicioUsuarios
     {
         public Task<GeneralResponse> AddUsuario(RegisterViewModel request);
         public Task<GeneralResponse> Auth(UsuarioAuthViewModel request);
-        public Task<GeneralResponse> DeleteUser(EliminarUsuarioViewModel usuarioEliminar);
+        public Task<GeneralResponse> DeleteUser(EliminarUsuarioViewModel usuarioEliminar, string rolUsuarioAutenticado);
         public Task<GeneralResponse> FindAllUsers();
         public Task<User?> FindById(int documento);
     }
