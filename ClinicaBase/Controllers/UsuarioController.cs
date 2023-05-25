@@ -143,6 +143,7 @@ namespace ClinicaBase.Controllers
             return View(eliminarUsuario);
         }
 
+
         [HttpPost]
         [Authorize(Roles = "Admin, Recursos Humanos")]
         public async Task<IActionResult> Eliminar(EliminarUsuarioViewModel? request)
@@ -156,6 +157,49 @@ namespace ClinicaBase.Controllers
             return RedirectToAction("Index", response);
 
         }
+
+
+        [HttpGet]
+        [Authorize]
+        public async Task<IActionResult> Perfil(GeneralResponse? response)
+        {
+            int documento = Int32.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
+            User? usuarioAutenticado = await _servicioUsuarios.FindById(documento);
+            if (usuarioAutenticado == null)
+            {
+                return RedirectToAction("Error");
+            }
+
+            PerfilViewModel perfil = new()
+            {
+                Documento = usuarioAutenticado.Documento,
+                Nombres = usuarioAutenticado.Nombres,
+                Apellidos = usuarioAutenticado.Apellidos,
+                Correo = usuarioAutenticado.Correo,
+                Telefono = usuarioAutenticado.Telefono,
+                Rol = usuarioAutenticado.Rol
+            };
+
+            if (response != null)
+            {
+                perfil.Succeeded = response.Succeed;
+                perfil.Message = response.Message;
+            }
+            return View(perfil);
+        }
+
+
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> EditarPerfil(PerfilViewModel request)
+        {
+            int documentoUsuarioAutenticado = Int32.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+            GeneralResponse response = await _servicioUsuarios.EditarPerfil(request, documentoUsuarioAutenticado);
+            return RedirectToAction("Perfil", response);
+        
+        }
+
 
         [HttpGet]
         [Authorize(Roles = "Admin, Recursos Humanos")]
