@@ -92,6 +92,7 @@ namespace ClinicaBase.Controllers
 
 
         [HttpGet]
+        [Authorize(Roles = "Admin, Recursos Humanos")]
         public IActionResult Register()
         {
             RegisterViewModel model = new();
@@ -99,6 +100,7 @@ namespace ClinicaBase.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin, Recursos Humanos")]
         public async Task<ActionResult<GeneralResponse>> Register(RegisterViewModel request)
         {
             if (!ModelState.IsValid)
