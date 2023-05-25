@@ -303,5 +303,37 @@ namespace ClinicaBase.Services.ServicioUsuarios
             }
             return response;
         }
+
+
+        public async Task<GeneralResponse> EditarPerfil(PerfilViewModel perfilViewModel, int documentoUsuarioAutenticado)
+        {
+            GeneralResponse response = new();
+
+            User? usuario = await FindById(documentoUsuarioAutenticado);
+            if (usuario == null)
+            {
+                response.Succeed = 0;
+                response.Message = "No se ha podido encontrar el usuario";
+                return response;
+            }
+
+            usuario.Correo = perfilViewModel.Correo;
+            usuario.Telefono = perfilViewModel.Telefono;
+
+            try
+            {
+                _context.Users.Entry(usuario).State = EntityState.Modified;
+                await _context.SaveChangesAsync();
+                response.Succeed = 1;
+                response.Message = "Datos almacenados correctamente";
+            }
+            catch (Exception)
+            {
+                response.Succeed = 0;
+                response.Message = "Se ha generado un error inesperado, por favor vuelva a intentarlo";
+            }
+
+            return response;
+        }
     }
 }
